@@ -20,7 +20,7 @@ class NetworkingService {
     
     func getRandomRecipes() {
         let apiKey = "3e1ce85ce4104391a021b5678f31fa50"
-        let urlString = "https://api.spoonacular.com/recipes/random?number=1&apiKey=\(apiKey)"
+        let urlString = "https://api.spoonacular.com/recipes/random?number=30&apiKey=\(apiKey)"
         let urlObj = URL(string: urlString)!
         let task = URLSession.shared.dataTask(with: urlObj) { data, response, error in
             if let error = error {
